@@ -1,0 +1,6 @@
+.single {
+  display: flex;
+  width: 100%;
+  /* Notes: The below line of code is to justify the flex contents */
+  justify-content: space-between;
+}

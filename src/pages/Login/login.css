@@ -1,0 +1,135 @@
+.login {
+  /* height: calc(100vh-50px); */
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  /* Notes: The below line of code is to align the items center to the content */
+  /* If the content is extended across the full screen, for example an input field, along with flex this code will help to make it to center */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://img.freepik.com/premium-photo/close-up-wooden-table-warehouse-with-boxes-generative-ai_1035438-2452.jpg?w=1060");
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 12px;
+  /* Notes:  The below lines of code makes the fiels semi-transparent 0.5 is the opacity level  */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  /* background-color: white; */
+  border: none;
+  border-radius: 20px;
+  transition: box-shadow 0.5s ease;
+}
+
+.loginInput:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgba(2, 123, 150, 0.675);
+  border: none;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.loginButton:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(210, 105, 30, 0.675);
+  border: none;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.loginRegisterButton:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.glowingLoginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  /* background-color: chocolate; */
+  border: none;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  --glow-color: rgb(176, 231, 255);
+  --glow-spread-color: rgba(123, 218, 255, 0.781);
+  --enhanced-glow-color: rgb(206, 255, 255);
+  --btn-color: rgb(116, 198, 201);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  transition: all 0.3s;
+}
+
+.glowingLoginRegisterButton::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.glowingLoginRegisterButton:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.glowingLoginRegisterButton:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}

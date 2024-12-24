@@ -9,6 +9,20 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Notes: This below link tag contents are for integrating and using the icons from the Font Awesome portal -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +38,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <style>
+      * {
+        margin: 0;
+      }
+    </style>
+    <style>
+      /* Notes: The below lines of code is for not having the blue coloration for the Link tags */
+      .link {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+    <title>Blogging React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

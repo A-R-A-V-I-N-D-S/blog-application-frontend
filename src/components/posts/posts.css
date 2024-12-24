@@ -1,0 +1,6 @@
+.posts{
+    flex: 9;
+    /* Notes: The below lines of code is to align items by another column next to the present column */
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,78 @@
+.register {
+  /* height: calc(100vh-50px); */
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  /* Notes: The below line of code is to align the items center to the content */
+  /* If the content is extended across the full screen, for example an input field, along with flex this code will help to make it to center */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://img.freepik.com/free-photo/flat-lay-office-desk-with-supplies_23-2148219243.jpg?w=996&t=st=1728888560~exp=1728889160~hmac=ac55c1098cc0c24ffeff1c75d4b54ce68a90725d91b65baaa4c7d5eb2d60850e");
+  background-size: cover;
+}
+
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 12px;
+  /* Notes:  The below lines of code makes the fiels semi-transparent 0.5 is the opacity level  */
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border: none;
+  border-radius: 20px;
+  transition: box-shadow 0.5s ease;
+}
+
+.registerInput:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgba(210, 105, 30, 0.675);
+  border: none;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.registerButton:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(1, 119, 146, 0.763);
+  border: none;
+  padding: 10px;
+  color: antiquewhite;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.registerLoginButton:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
